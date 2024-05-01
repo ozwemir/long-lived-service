@@ -8,14 +8,19 @@
 ```
 docker-compose -f docker-compose.yml up -d
 ```
-- run the app in dev mode
+- to run the application in development mode, use the following command
 ```
 npm run dev
 ```
 
-- run the app in prod mode
+- to build the application, use the following command
 ```
-npm run prod
+npm run build
+```
+
+- To run the built application, use the following command
+```
+npm start
 ```
 
 # API Endpoints

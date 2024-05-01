@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  long-lived-service:
+    image: long-lived-service
+    container_name: long-lived-service
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 9000:9000
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+  
