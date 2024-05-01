@@ -3,6 +3,7 @@
 
 
 # Getting Started
+
 - If Docker is already installed, you can start the API service by running the following command:
 ```
 docker-compose -f docker-compose.yml up -d
